@@ -1,0 +1,192 @@
+.loginBox {
+    width: 370px;
+    /* border: 1px solid #ddd; */
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 100px auto 100px auto;
+    box-shadow: 0px 0px 60px 6px #dadada;
+    overflow: hidden;
+}
+
+.loginBox h1 {
+    text-align: center;
+    color: rgb(23 15 88);
+    margin-bottom: 40px;
+}
+
+.loginSource {
+    /* width: 100%; */
+    text-align: right;
+    margin: 0px 30px;
+    box-sizing: border-box;
+}
+
+.loginSource i {
+    font-size: 30px;
+    padding: 0px 3px;
+}
+
+.loginSource i:last-child {
+    color: #008ed2;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+.loginSource i:last-child:hover {
+
+color: #0981bb;
+}
+
+.loginSource i:nth-child(2) {
+    color: #006bda;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+.loginSource i:nth-child(2):hover {
+    color: #005dbd;
+}
+
+.loginSource i:first-child {
+    color: #ffffff;
+    width: 229px;
+    text-align: center;
+    background: #ff5200;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.loginSource i:first-child:hover {
+
+background: #de4a04;
+}
+
+
+/* ------------------------login box start here----------------- */
+
+.singleBoxes {
+    margin-top: 50px;
+}
+
+.box1 {
+    /* margin: 0px 30px; */
+}
+
+form.fullBox {
+    margin: 0px 30px;
+}
+
+form.fullBox input {
+    padding: 10px 60px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.box1 {
+    position: relative;
+}
+
+.box1 i {
+    position: absolute;
+    padding: 10px;
+    background: #001b44;
+    color: #fff;
+    border-radius: 5px 0px 0px 5px;
+}
+
+
+/* button & sign up box start here */
+.forgetPwd_loginBtn button  {
+    width: 100%;
+    background: #006bda;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px 0px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.forgetPwd_loginBtn button a {
+    color: #fff;
+    text-decoration: none;
+}
+.forgetPwd_loginBtn button:hover {
+background: #004da0;
+}
+
+.registrationLink {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+body {
+    background-image: url('bg1.png');
+}
+
+
+
+/* --------------------------------------------- */
+
+
+
+.signUpBox {
+    width: 400px;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    margin: 45px auto 45px auto;
+    box-shadow: rgb(218 218 218) 0px 0px 60px 6px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.signUpBox h1 {
+    text-align: center;
+    color: rgb(23 15 88);
+    margin-bottom: 40px;
+}
+
+.signUpBoxes {
+    margin: 0px 30px;
+    text-align: center;
+}
+
+.signUpBoxes input {
+    width: 310px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    border-left: 2px solid #03b5d252;
+}
+
+
+.resBtn button {
+    /* width: 70%; */
+    border: none;
+    padding: 10px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #006bda;
+    color: #fff;
+    transition: 0.2s;
+    padding: 10px 80px;
+    text-decoration: none;
+}
+
+.resBtn button:hover {
+background: #0657ad;
+
+}
+.bottomTitle {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+
+
+
+
+<div class="signUpBox">
+    <h1>SIGN UP!</h1>
+    <div class="signUpBoxes">
+        <form action="">
+            <input id="fname" type="text" placeholder="First-Name" required><br>
+            <input id="lname" type="text" placeholder="Last-Name" required><br>
+            <input id="gmail" type="gmail" placeholder="G-mail" required><br>
+            <input id="pwd" type="password" placeholder="Password" required><br>
+            <input id="pwdC" type="text" placeholder="Conform-Password" required>
+            <div class="resBtn">
+            <button id="regBtn" href="index.html">Registration</button>
+            <br>
+            
+        </div>
+        </form>
+<div class="bottomTitle">
+                <span>Already have an account? Then please </span>
+            <a href="index.html">Sign in!</a>
+            </div>
+    </div>
+</div>
+
+
+
+<script>
+    
+document.querySelector('#regBtn').addEventListener('click',function(e){
+
+e.preventDefault()
+
+let fname = document.querySelector('#fname').value;
+let lname = document.querySelector('#lname').value;
+let gmail = document.querySelector('#gmail').value;
+let pwd = document.querySelector('#pwd').value;
+let pwdC = document.querySelector('#pwdC').value;
+
+ localStorage.setItem('fname',fname)
+ localStorage.setItem('lname',lname)
+ localStorage.setItem('gmail',gmail)
+ localStorage.setItem('pwd',pwd)
+ localStorage.setItem('pwdC',pwdC)
+
+// localStorage.clear()
+
+location.href='index.html'
+swal("Good job!", "You have entered!", "success");
+
+})
+</script>
+
+
+
+
+<script src="tilt.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

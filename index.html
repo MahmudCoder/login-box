@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font-awsome cdn link here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- main.css -->
+<link rel="stylesheet" href="main.css">
+
+    <title>Document</title>
+
+    <style>
+    
+    </style>
+
+</head>
+<body>
+    
+
+
+
+
+
+
+
+<div class="loginBox"   data-tilt data-tilt-max="10" data-tilt-speed="100" data-tilt-perspective="500">
+    <h1>LOGIN</h1>
+    <div class="loginSource">
+
+        <i class="fab fa-google-plus-g"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        
+    </div>
+    <div class="singleBoxes">
+        <div class="box1">
+            <form action="" class="fullBox">
+
+                <div class="box1">
+                    <i class="fas fa-user"></i>
+                    <input id="email" type="text" placeholder="Email!" required>
+                </div>
+                <div class="box2">
+                    <i class="fas fa-key"></i>
+                    <input id="pwd" type="password" placeholder="Password!" required>
+                    <div class="forgetPwd_loginBtn">
+                        <a href="#">Foreget Password!</a>
+                        <br>
+                        <button type="submit" id="login">LOGIN</button>
+                    </div>
+                </div>
+                <div class="registrationLink">
+                    <span>Don't have an account?</span>
+                    <a href="registasion.html">Sign up</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script>
+
+document.querySelector('#login').addEventListener('click',function(abc){
+
+abc.preventDefault()
+
+// let x = localStorage.getItem('gmail')
+// let m = localStorage.setItem('pwd')
+
+let email = document.querySelector('#email').value;
+let pwd = document.querySelector('#pwd').value;
+document.querySelector('#email').value='';
+document.querySelector('#pwd').value='';
+
+let email1 = localStorage.getItem('gmail');
+let pwd1 = localStorage.getItem('pwd')
+ if(email== '' && pwd == ''){
+    swal("Warning!", "Please, fill out this field!", "info");
+}else if(email == email1 && pwd == pwd1){
+swal("Good job!", "You have entered!", "success");
+setTimeout(()=>{
+    location.href='1page/index.html';
+},1000)
+
+}
+
+else{
+swal("Warning!", "Your password & Email Incorrect!", "error");
+
+}
+
+})
+
+
+
+</script>
+
+
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="tilt.js"></script>
+
+<script src="app.js"></script>
+</body>
+</html>
